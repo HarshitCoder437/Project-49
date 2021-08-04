@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/dusk/50/000000/social-network.png" type="image/x-icon">
+    <title>Follow Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 9rem;
+        }
+
+        #body {
+            font-family: 'Lato', sans-serif;
+            transition: all .5s;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40vh;
+        }
+
+        .container a {
+            color: #333;
+            background-color: #ccc;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            margin: 0 4rem;
+            transition: all .25s;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .container a#facebook:hover {
+            background-color: #1ea1f2;
+        }
+
+        .container a#instagram:hover {
+            background-color: #e4405f;
+        }
+
+        .container a#linkedin:hover {
+            background-color: #0a66c2;
+        }
+
+        .container a#twitter:hover {
+            background-color: #1977f2;
+        }
+
+        .container a .fa {
+            transition-property: all;
+            transition-duration: .5s;
+        }
+
+        .container a:hover .fa {
+            transform: scale(1.75);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <h2 id="heading">Follow Us on:-</h2>
+    <div class="container">
+        <a href="http://facebook.com/" target="_blank" id="facebook" onmouseover="facebook();">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="http://instagram.com/" target="_blank" id="instagram" onmouseover="instagram();">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="http://linkedin.com/" target="_blank" id="linkedin" onmouseover="linkedin();">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="http://twitter.com/" target="_blank" id="twitter" onmouseover="twitter();">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+    <script>
+        function facebook() {
+            document.getElementById("body").style.backgroundColor = "#1ea1f2";
+            document.getElementById("heading").style.color = "#fff";
+        }
+
+        function instagram() {
+            document.getElementById("body").style.backgroundColor = "#e4405f";
+            document.getElementById("heading").style.color = "#fff";
+        }
+
+        function linkedin() {
+            document.getElementById("body").style.backgroundColor = "#0a66c2";
+            document.getElementById("heading").style.color = "#fff";
+        }
+
+        function twitter() {
+            document.getElementById("body").style.backgroundColor = "#1977f2";
+            document.getElementById("heading").style.color = "#fff";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: block;
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.heading-primary {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#nav-content {
+    display: flex;
+    justify-content: center;
+    margin-right: 35rem;
+}
+
+#nav-content ul {
+    display: flex;
+}
+
+#nav-content ul li {
+    list-style: none;
+}
+
+#nav-content ul li a {
+    text-decoration: none;
+    font-size: large;
+    color: #0000FF;
+}
+
+#nav-content ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+hr {
+    margin: 2rem auto 0 auto;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+}
+
+.container ul {
+    margin-left: 34rem;
+}
+
+.container ul li {
+    list-style: decimal;
+    margin-left: 1.5rem;
+    padding: 0.3rem 0.4rem;
+}
+
+img {
+    display: block;
+    width: 30rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    box-shadow: -10px 10px 10px grey;
+}
+
+img:active {
+    transform: scale(.8);
+}
+
+footer .container {
+    color: #0000FF;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
